@@ -1,0 +1,9 @@
+---
+blank_issues_enabled: false
+contact_links:
+  - name: "See Duplicates"
+    about: "Please check for existing or resolved issues before opening a new ticket."
+    url: "https://github.com/cyber-mp/cybermp-issues/issues"
+  - name: "Official Discord Support"
+    about: "Need direct assistance? Chat with our community and support team here."
+    url: "https://discord.cyber.mp"
