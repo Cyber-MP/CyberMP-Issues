@@ -1,0 +1,65 @@
+name: Bug report
+description: Submit a bug report for CyberMP
+labels: ['bug']
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What went wrong?
+      description: Provide a detailed explanation of the bug.
+      placeholder: Explain the issue clearly so we can understand exactly what is failing.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we replicate this issue on our end?
+      placeholder: List the exact actions taken or provide the specific code needed to trigger the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Outcome
+      description: What should have happened instead?
+      placeholder: Describe the correct behavior you were anticipating before the bug occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra Information
+      description: Anything else we should know?
+      placeholder: Drop any relevant screenshots, logs, or extra context here.
+  - type: input
+    id: os
+    attributes:
+      label: OS Environment
+      description: Which operating system are you using?
+      placeholder: e.g., Windows 11, Ubuntu 22.04
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CyberMP Client Version
+      description: Which build version are you experiencing this on?
+      placeholder: e.g., 2.1.4-stage.1
+    validations:
+      required: true
+  - type: input
+    id: crashdumpid
+    attributes:
+      label: Crash Dump ID
+      description: If the client crashed, please paste the provided crash dump ID here.
+  - type: markdown
+    attributes:
+      value: "## "
+  - type: checkboxes
+    attributes:
+      label: "Verification"
+      options:
+      - label: "*I confirm that I have tested this and the issue still occurs on the latest Stage release build available at the time of writing.*"
+        required: true
