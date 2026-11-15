@@ -1,0 +1,33 @@
+name: Feature request
+description: Propose a new feature or enhancement for CyberMP
+labels: ['enhancement']
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: The Problem or Use Case
+      description: What limitation or issue are you facing that this feature would resolve?
+      placeholder: Explain the current pain point. E.g., "I often find myself struggling to..." or "It is currently very difficult to..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How exactly should this new feature work?
+      placeholder: Describe the ideal functionality, API addition, or change you would like to see implemented.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Workarounds
+      description: Are there other ways to achieve this right now?
+      placeholder: Detail any other methods, workarounds, or alternative solutions you have already considered or tried.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Anything else we should consider?
+      placeholder: Drop any relevant mockups, screenshots, code examples, or extra details here.
